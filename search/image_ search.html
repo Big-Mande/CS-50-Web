@@ -5,27 +5,27 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-
+        
         <div class="page_links">
-            <a class="link" href="image_ search.html">Images</a>
+            <a class="link" href="index.html">Search</a>
+            
+            <a class="link" href="advanced_search/html">Advanced Search</a>
         </div>
 
         <div class="container">
-            <div class="img">
                 <img src="google.png">
-                <br>
-                <br>
-                <br>
-                <div class="search_bar">
-                    <form action="https://google.com/search">
-                        <input class="search" type="text" name="q">
-                        <br>
-                        <br>
-                        <input type="submit" value="Google Search">
-                    </form>
-                </div>
-                
-            </div>
+                <form  class="search_bar"  method="GET" action="https://google.com/search">
+                    <div class="hov">
+                        <div class="input_box">
+                            <img id="glass" src="mag_glass.png">
+                            <input type="text" name="q">
+                            <input name="tbm" value="isch" type="hidden">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <input type="submit" value="Image Search">
+                 </form>                
             
         </div>
 

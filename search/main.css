@@ -56,16 +56,45 @@ a:hover{
     text-decoration: underline;
 }
 
-
+img [src="mag_glass.png"] {
+    height: 10%;
+    width: 10%;
+}
 
 input[type=text] {
     border: none;
     outline: none;
     height: 100%;
-    width: 35vw;
+    width: 25vw;
     background-color: transparent;
     padding-left: 10px;
 }
+
+input[type="submit"]{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: 
+    none;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 
 .container {
     display: flex;
@@ -85,9 +114,8 @@ input[type=text] {
 
 .link {
     color: rgba(0,0,0,0.87);
-    font-family: arial, sans-serif;
-    padding: auto;
-    margin: .5%;
+    padding-right: 1%;
+    margin: .8%;
     font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
 }
 
@@ -95,18 +123,37 @@ input[type=text] {
     display: grid;
     place-items: center;
     flex: 1;
+    padding-top: 2em;
 }
 
-#input_box {
+.hov :hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+  }
+
+.input_box {
     border: 1px solid #dfe1e5;
     height: 44px;
-    width: 34vw;
+    width: 32vw;
     border-radius: 24px;
     display: flex;
     justify-content: center;
 }
 
+.input_box :hover{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+
 #search{
     border: none;
     width: 600px;
+}
+
+#glass {
+    height: 90%;
+    padding-top: 2px;
 }
